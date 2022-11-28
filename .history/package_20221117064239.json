@@ -1,0 +1,30 @@
+{
+  "name": "FIRST_CYPRESS_BDD_DEMO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "test":  "npx cypress run",
+     "test1":  "npx cypress run",
+    "eHeaded": "npx cypress run --headed",
+    "headedLess": "npx cypress run",
+    "testSteps": "npx cypress run --spec cypress/integration/login/*",
+    "dashBoard":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --headed",
+    "dashBoardParallelHeadless":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --parallel",
+    "dashBoardParallelHeaded":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --parallel --browser chrome headed",
+    "dashBoardHeadeless":  "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f",
+     "tags": "npx cypress-tags run -e TAGS='@mutilSelect' --browser chrome --headed && npm run headedLess -- --browser electron --headed",
+     "dashBoredMultiBrower": "npm run dashBoardHeadeless -- --browser chrome --headed &&  npm run dashBoardHeadeless -- --browser edge --headed",
+     "multiBrowser": "npm run headedLess -- --browser electron --headed  &&  npm run headedLess -- --browser edge --headed  &&  npm run headedLess -- --browser chrome --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+  
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
