@@ -12,7 +12,6 @@
     "dashBoard": "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --headed",
     "dashBoardParallelHeadless": "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --parallel",
     "dashBoardParallelHeaded": "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --parallel --browser chrome headed",
-    "dashBoardParallelHeaded2": "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f --parallel -- --spec cypress/integration/login/*.js --browser chrome",
     "dashBoardHeadeless": "cypress run --record --key 37d7e770-b53f-47d0-830a-dccd92c54d9f",
     "tags": "npx cypress-tags run -e TAGS='@mutilSelect' --browser chrome --headed && npm run headedLess -- --browser electron --headed",
     "dashBoredMultiBrower": "npm run dashBoardHeadeless -- --browser chrome --headed &&  npm run dashBoardHeadeless -- --browser edge --headed",
